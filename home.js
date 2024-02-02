@@ -79,15 +79,19 @@ buttons.forEach(function(button) {
 
 //Slideshow
 let slideIndex = 1;
+let slideInterval;
+
 showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
+    resetTimer();
     showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
+    resetTimer();
     showSlides(slideIndex = n);
 }
 
@@ -105,15 +109,16 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    }
+}
 
-
-    setInterval(function() {
+function resetTimer() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(function() {
         plusSlides(1);
     }, 10000);
+}
 
-//disable resize
-
-window.addEventListener('resize', function () {
-    window.resizeTo(window.innerWidth, window.innerHeight);
-});
+// Initial setup for the timer
+slideInterval = setInterval(function() {
+    plusSlides(1);
+}, 10000);
