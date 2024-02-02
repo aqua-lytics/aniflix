@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1440px">
+    <title>Aniflix</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head> 
+<body>
+    <nav id="NavBar">
+        <h1 id="HomeHeader">Aniflix</h1>
+        
+        <form id="searchForm">
+            <input type="search" id="searchInput" required>
+            <i class="fa fa-search" id="searchIcon"></i>
+        </form>
+        <button class="button-header" id="Home" type="button">Home</button>
+        <button class="button-header" id="genre" type="button">Genre</button>
+        <button class="button-header" id="social" type="button">Social</button>
+        <button id="Login" type="button">Login</button>
+    </nav>
+    <div class="slideshow-container">
+        <div id="DSDiv" class="slide fade">
+            
+            <div id="DsData" class="slideData" >
+                <br><br><br>
+                <h1 id="DS_header" class="slide_header">Demon Slayer</h1><br>
+                <button id="watchds" class="watchslide" type="button">Watch Now</button><br><br><br>
+                <p1 id="DS_Desc" class="slide_Desc">A family is attacked by demons and only two members survive - Tanjiro and his sister Nezuko, who is turning into a demon slowly. Tanjiro sets out to become a demon slayer to avenge his family and cure his sister.</p1>
+                <br><br><br><br>
+            </div>
+        </div>
+        <div id="aotDiv" class="slide fade">
+            <div id="aotData" class="slideData">
+                <br><br><br>
+                <h1 id="aot_header" class="slide_header">Attack On Titan</h1><br>
+                <button id="watchaot" type="button" class="watchslide">Watch Now</button><br><br><br>
+                <p1 id="aot_Desc" class="slide_Desc">After his hometown is destroyed and is traumatized, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.</p1>
+                <br><br><br><br>
+            </div>
+    
+        </div>
+        <div id="narutoDiv" class="slide fade">
+            <div id="narutoData" class="slideData">
+                <br><br><br>
+                <h1 id="naruto_header" class="slide_header">Naruto Classic</h1><br>
+                <button id="watchnaruto" class="watchslide" type="button">Watch Now</button><br><br><br>
+                <p1 id="naruto_Desc" class="slide_Desc">Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.</p1>
+                <br><br><br><br>
+            </div>
+
+        </div>
+        <div id="onepieceDiv" class="slide fade">
+            <div id="onepieceData" class="slideData">
+                <br><br><br>
+                <h1 id="onepiece_header" class="slide_header">One Piece</h1><br>
+                <button id="watchonepiece" class="watchslide" type="button">Watch Now</button><br><br><br>
+                <p1 id="onepiece_Desc" class="slide_Desc">Monkey D. Luffy sets off on an adventure with his pirate crew in hopes of finding the greatest treasure ever, known as the "One Piece."</p1>
+                <br><br><br><br>
+            </div>
+
+        </div>
+
+        <div id="mystarDiv" class="slide fade">
+            <div id="mystarData" class="slideData">
+                <br><br><br>
+                <h1 id="mystar_header" class="slide_header">Oshi no Ko</h1><br>
+                <button id="watchmystar" class="watchslide" type="button">Watch Now</button><br><br><br>
+                <p1 id="mystar_Desc" class="slide_Desc">A doctor and his recently-deceased patient are reborn as twins to a famous Japanese musical idol and navigate the highs and lows of the Japanese entertainment industry as they grow up together through their lives.</p1>
+                <br><br><br><br>
+            </div>
+
+        </div>
+
+        <div id="jjkDiv" class="slide fade">
+            <div id="jjkData" class="slideData">
+                <br><br><br>
+                <h1 id="jjk_header" class="slide_header">Jujutsu Kaisen</h1><br>
+                <button id="watchjjk" class="watchslide" type="button">Watch Now</button><br><br><br>
+                <p1 id="jjk_Desc" class="slide_Desc">A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a shaman's school to be able to locate the demon's other body parts and thus exorcise himself.</p1>
+                <br><br><br><br>
+            </div>
+
+        </div>
+
+
+        <div id="soloDiv" class="slide fade">
+            <div id="soloData" class="slideData">
+                <br><br><br>
+                <h1 id="solo_header" class="slide_header">Solo Leveling</h1><br>
+                <button id="watchsolo" class="watchslide" type="button">Watch Now</button><br><br><br>
+                <p1 id="solo_Desc" class="slide_Desc">In a world of gifted hunters and monsters, a weak hunter Sung Jinwoo gains extraordinary powers through a mysterious program, leading him to become one of the strongest hunters and conquering even the strongest dungeons.</p1>
+                <br><br><br><br>
+            </div>
+
+        </div>
+
+        <div id="deathnoteDiv" class="slide fade">
+            <div id="deathnoteData" class="slideData">
+                <br><br><br>
+                <h1 id="deathnote_header" class="slide_header">Death Note</h1><br>
+                <button id="watchdeathnote" class="watchslide" type="button">Watch Now</button><br><br><br>
+                <p1 id="deathnote_Desc" class="slide_Desc">An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.</p1>
+                <br><br><br><br>
+            </div>
+
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>    
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

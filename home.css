@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: rgb(16,16,16);
+    margin:0px;
+    
+
+}
+
+
+#NavBar{
+
+    position: fixed;
+    top:0%;
+    left: 0%;
+    height: 85px;
+    width: 100%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-family: "Bitter";
+    color:rgb(241, 241, 241);
+    background-color: rgb(16, 16, 16);
+    box-shadow: -10px 10px 20px rgb(16, 16, 16);
+    z-index: 10;
+
+}
+
+#HomeHeader{
+    font-family: "Bitter";
+    color:rgb(255, 255, 255);
+    position: relative;
+    font-size: 2em;
+    top:-3%;
+    width: 7.2%;
+    font-weight: bold;
+}
+
+.button-header {
+    font-family: "Bitter";
+    color:white;
+    background-color: transparent;
+    position: relative;
+    top:-82%;
+    align-items: center;
+    font-family: 'Bitter';
+    font-size: 1.5rem;
+    border-color: transparent;
+    height: 50%;
+    width: 8%;
+    left: 48%;
+    transition: box-shadow .2s,-webkit-box-shadow .5s, transform 0.15s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-right:3%;
+    cursor:pointer
+
+  }
+
+
+
+.button-header:hover {
+    box-shadow: #ffffff 0 0 0 3px, transparent 0 0 0 0;
+    transform: scale(1.1);
+  }
+
+.button-header:active{
+    transform: scale(0.96);
+}
+
+#Login{
+    font-family: "Bitter";
+    color:white;
+    background-color: transparent;
+    position: relative;
+    top:-82%;
+    left: 50%;
+    font-family: 'Bitter';
+    font-size: 1.5rem;
+
+    border-color: transparent;
+    height: 50%;
+    width: 8%;
+    
+    transition: transform 0.15s,background-color 0.15s,color 0.15s,translate 0.15s;
+
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: white 0 0 0 3px,transparent 0 0 0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-right: 3%;
+    margin-left: 3%;
+    cursor:pointer
+}
+
+
+
+
+
+
+
+#Login:hover{
+    color:rgb(16, 16, 16);
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+#Login:active{
+    transform: scale(0.96);
+}
+
+
+#searchForm {
+    position: fixed;
+    top: 42px;
+    left: 85.4%; /* Adjusted for responsiveness */
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#searchInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 44.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    transition: display 1s;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+    cursor: text;
+}
+
+#searchIcon {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: rgb(16, 16, 16);
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+
+#searchForm:hover,
+#searchForm:valid {
+    width: 300px;
+    position:fixed;
+    left:76.7%;
+    cursor: pointer;
+}
+
+#searchForm:hover #searchInput,
+#searchForm:valid #searchInput {
+    display: block;
+}
+
+#searchForm:hover #searchIcon,
+#searchForm:valid #searchIcon {
+    background: rgb(16, 16, 16);
+    color: white;
+}
+
+
+
+.button-header.shifted {
+    transform: translateX(-250px);
+    transition: transform 1s ease;
+}
+
+.button-header.shifted-back {
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+
+
+
+
+#nextslidebutton:hover{
+    transform: scale(1.5);
+}
+#nextslidebutton:active{
+    transform: scale(0.96);
+}
+
+
+
+
+.slide{
+    margin-left:0px;
+    margin-top:85px;
+    position:absolute;
+    width:100%;
+    height:12.1%;
+    display:None;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    padding-top: 600px;
+    box-shadow: 0px 10px 30px rgb(16,16,16);
+}
+
+#aotDiv{background-image: url('aot.jpg');}
+#narutoDiv{background-image:url('naruto.jpg')}
+#onepieceDiv{background-image:url('onepiece.jpg')}
+#mystarDiv{background-image:url('mystar.jpg')}
+#jjkDiv{background-image:url('jjk.jpg')}
+#DSDiv{background-image:url('ds.jpg')}
+#soloDiv{background-image:url('solo.jpg')}
+#deathnoteDiv{background-image:url('deathnote.jpg')}
+
+
+
+
+
+.slideData{
+    position:relative ;
+    top:-335px;
+    width: 54.9%;
+
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.9),rgb(0,0,0,0.8),rgb(0,0,0,0.6),rgb(0,0,0,0.4),rgb(0,0,0,0));
+    color:white;
+    padding-left:50px;
+    padding-right: 600px;
+    padding-bottom: 10px;
+    z-index: 0;
+}
+
+.slide_header{
+    font-size:3em;
+}
+
+.slide_Desc{
+    font-size:1.7em;
+    align-items: justify;
+}
+
+.watchslide {
+    font-family: "Bitter";
+    color: white;
+    background-color: transparent;
+    position: relative;
+    top: -10px;
+    left: 60px;
+    font-family: 'Bitter';
+    font-size: 1.5rem;
+    border-color: transparent;
+    height: 45px;
+    width: 160px;
+    transition: transform 0.15s, background-color 0.15s, color 0.15s, translate 0.15s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: white 0 0 0 3px, transparent 0 0 0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-right: 50px;
+    cursor: pointer;
+    font-weight:bold;
+    
+}
+
+.watchslide:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color:rgb(16,16,16);
+}
+
+.watchslide:active{
+    transform:scale(0.96);
+}
+
+
+
+#onepieceData{
+    top:-304px;
+}
+
+#mystarData{
+    top:-366px;
+}
+#soloData{
+    top:-366px;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height:30px;
+    margin-top: -22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    color: white;
+    background-color: rgb(16,16,16,0.7);
+    border-radius: 200px;
+    border-width: 0px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+
+}  
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0);
+    transform: scale(1.1)
+
+}
+
+.prev:active,.next:active{
+    transform:scale(0.9)
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+    /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+
+
+
+@media screen and (max-width: 786px){
+    .slide{
+        height: auto;
+        width: auto;
+    }
+}
+    
+
+
+.nigga{
+    font-size: 5em;
+}
